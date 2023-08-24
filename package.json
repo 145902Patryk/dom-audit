@@ -1,0 +1,28 @@
+{
+  "name": "dom-audit",
+  "version": "1.0.0",
+  "description": "Functions for analyzing DOM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/145902Patryk/dom-audit.git"
+  },
+  "keywords": [
+    "dom",
+    "html",
+    "audit",
+    "count"
+  ],
+  "author": "Patryk Laszuk <patryklaszuk98@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/145902Patryk/dom-audit/issues"
+  },
+  "homepage": "https://github.com/145902Patryk/dom-audit#readme",
+  "dependencies": {
+    "dom-audit": "^1.0.0"
+  }
+}

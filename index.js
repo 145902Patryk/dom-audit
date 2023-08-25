@@ -7,17 +7,17 @@ const elementDepth = (el) => {
     return depth
 }
 
-exports.countDOM = () => {
+const countDOM = () => {
     return document.querySelectorAll('*').length;
 }
-exports.maxDepth = () => {
+const maxDepth = () => {
     const depths = []
     Array.from(document.querySelectorAll('*')).forEach(node => {
         depths.push(elementDepth(node));
     });
     return Math.max(...depths)
 }
-exports.maxChildren = (excluded = ['head']) => {
+const maxChildren = (excluded = ['head']) => {
     const children = []
     Array.from(document.querySelectorAll('*')).filter(node =>
         !node.closest(...excluded)
@@ -26,3 +26,5 @@ exports.maxChildren = (excluded = ['head']) => {
     });
     return Math.max(...children)
 }
+
+export {countDOM, maxDepth, maxChildren};
